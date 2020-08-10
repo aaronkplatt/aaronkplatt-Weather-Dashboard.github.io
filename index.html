@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./Assets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="conatiner">
+        <!-- header -->
+        <header class="header">
+            <span class="title">Weather Dashboard</span>
+        </header>
+        <div class="row">
+            <!-- search Btn -->
+            <div class="col-md-3">
+                <form>
+                    <div class="form-group" id="searchInput">
+                    <label for="exampleFormControlInput1">Search For A City:</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="City">
+                    </div>
+                </form>
+                <!--  -->
+                <ul class="list-group" id="listGroup">
+                    <li class="list-group-item">example</li>
+                    <li class="list-group-item">example</li>
+                    <li class="list-group-item">example</li>
+                    <li class="list-group-item">example</li>
+                    <li class="list-group-item">example</li>
+                    <li class="list-group-item">example</li>
+                    <li class="list-group-item">example</li>
+                    <li class="list-group-item">example</li>  
+                </ul>
+            </div>
+
+            
+            <!-- Inputs for the card -->
+            <div class="card col-md-9" id="weatherCard">
+                <span class="location">Location:</span>
+                <span class="temperature">Temperature:</span>
+                <span class="humidity">Humidity:</span>
+                <span class="windSpeed">Wind Speed:</span>
+                <span class="uvIndex">UV Index:</span>
+
+
+            </div>
+        </div>
+        <div class="row" id="forcastRow">
+            <div class="col-md-12">
+                <span class="fiveDayForcast"> 5 Day Forcast</span>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
