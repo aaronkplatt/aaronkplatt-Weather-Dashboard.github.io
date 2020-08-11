@@ -1,6 +1,15 @@
+body {
+    overflow: hidden;
+    
+}
+
 .title {
     color: white;
     font-size: 50px;
+}
+
+.row {
+    margin-right: 0px;
 }
 
 .header {
@@ -12,18 +21,25 @@
     background-color: lightblue;
 }
 
-#listGroup {
+.list-group {
     padding-left: 15px;
+}
+
+.list-group-item {
+    background-color: lightgray;
 }
 
 #weatherCard {
     background-color: lightcyan;
-    
+    margin-top: 15px;
 }
 
 #searchInput {
     padding-left: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
 }
+
 
 #forcastRow {
    text-align: center; 

@@ -6,7 +6,9 @@
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="./Assets/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    
 </head>
 <body>
     <div class="conatiner">
@@ -14,31 +16,22 @@
         <header class="header">
             <span class="title">Weather Dashboard</span>
         </header>
-        <div class="row">
+        <div class="row" >
             <!-- search Btn -->
             <div class="col-md-3">
-                <form>
-                    <div class="form-group" id="searchInput">
-                    <label for="exampleFormControlInput1">Search For A City:</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="City">
-                    </div>
+                <form class="example">
+                    <input type="text" placeholder="City" id="searchInput">
+                    <button type="button" id="searchBtn"><i class="fa fa-search"></i></button>
                 </form>
                 <!--  -->
                 <ul class="list-group" id="listGroup">
-                    <li class="list-group-item">example</li>
-                    <li class="list-group-item">example</li>
-                    <li class="list-group-item">example</li>
-                    <li class="list-group-item">example</li>
-                    <li class="list-group-item">example</li>
-                    <li class="list-group-item">example</li>
-                    <li class="list-group-item">example</li>
-                    <li class="list-group-item">example</li>  
+                    <!-- Local Storage -->
                 </ul>
             </div>
 
             
             <!-- Inputs for the card -->
-            <div class="card col-md-9" id="weatherCard">
+            <div class="card col-md-8" id="weatherCard">
                 <span class="location">Location:</span>
                 <span class="temperature">Temperature:</span>
                 <span class="humidity">Humidity:</span>
@@ -50,12 +43,14 @@
         </div>
         <div class="row" id="forcastRow">
             <div class="col-md-12">
-                <span class="fiveDayForcast"> 5 Day Forcast</span>
+                <span class="fiveDayForcast">5 Day Forecast</span>
             </div>
         </div>
-
-
+        
+        
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="script.js"></script>
+    
 </body>
 </html>
