@@ -5,5 +5,6 @@ This Website is developed to let you look at the weather for a named city. You w
 GitHub Repository: https://github.com/aaronkplatt/aaronkplatt-Weather-Dashboard.github.io
 Deployed Project: https://aaronkplatt.github.io/aaronkplatt-Weather-Dashboard.github.io/index.html
 
-Screenshot: 
-![homework6](https://user-images.githubusercontent.com/48539172/89983730-fa0c4000-dc2c-11ea-946b-f1416ace9648.PNG)
+
+Screenshot: ![homework6](https://user-images.githubusercontent.com/48539172/89983730-fa0c4000-dc2c-11ea-946b-f1416ace9648.PNG)
+
