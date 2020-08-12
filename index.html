@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="./Assets/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Dashboard</title>
+        <link rel="stylesheet" href="./Assets/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        
+    </head>
 <body>
     <div class="conatiner">
         <!-- header -->
@@ -25,30 +25,66 @@
                 </form>
                 <!--  -->
                 <ul class="list-group" id="listGroup">
-                    <!-- Local Storage -->
+                    <!-- Local Storage and javascript create these elements -->
                 </ul>
             </div>
-
+            
             
             <!-- Inputs for the card -->
             <div class="card col-md-8" id="weatherCard">
+                <h1 id="currentDay"></h1>
+                <p id="currentIcon"></p>
                 <span class="location">Location:</span>
                 <span class="temperature">Temperature:</span>
                 <span class="humidity">Humidity:</span>
                 <span class="windSpeed">Wind Speed:</span>
-                <span class="uvIndex">UV Index:</span>
-
-
+                <p id="uvIndex0"></p>
             </div>
         </div>
+        <!-- Five Day Forecast -->
         <div class="row" id="forcastRow">
             <div class="col-md-12">
                 <span class="fiveDayForcast">5 Day Forecast</span>
             </div>
         </div>
-        
-        
+        <div class="row" id="forcastRow">
+            <div class="col-md-1"></div>
+            <div class="card col-md-2" id="forecastCard">
+                <div id="forcastDate1"><h2 id="currentDay1">date</h2></div>
+                <p id="forecastIcon1"></p>
+                <span class="forecastTemperature1">Temp: </span>
+                <span class="forecastHumidity1">Humidity: </span>
+            </div>
+            
+            <div class="card col-md-2" id="forecastCard">
+                <div id="forcastDate2"><h2 id="currentDay2">date</h2></div>
+                <p id="forecastIcon2"></p>
+                <span class="forecastTemperature2">Temp: </span>
+                <span class="forecastHumidity2">Humidity: </span>
+            </div> 
+            <div class="card col-md-2" id="forecastCard">
+                <div id="forcastDate3"><h2 id="currentDay3">date</h2></div>
+                <p id="forecastIcon3"></p>
+                <span class="forecastTemperature3">Temp: </span>
+                <span class="forecastHumidity3">Humidity: </span>
+            </div>   
+
+            <div class="card col-md-2" id="forecastCard">
+                <div id="forcastDate4"><h2 id="currentDay4">date</h2></div>
+                <p id="forecastIcon4"></p>
+                <span class="forecastTemperature4">Temp: </span>
+                <span class="forecastHumidity4">Humidity: </span>
+            </div>   
+
+            <div class="card col-md-2" id="forecastCard">
+                <div id="forcastDate5"><h2 id="currentDay5">date</h2></div>
+                <p id="forecastIcon5"></p>
+                <span class="forecastTemperature5">Temp: </span>
+                <span class="forecastHumidity5">Humidity: </span>
+            </div>   
+        </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="script.js"></script>
     

@@ -25,13 +25,35 @@ body {
     padding-left: 15px;
 }
 
-.list-group-item {
-    background-color: lightgray;
+/* card */
+#weatherCard {
+    background-color: rgb(128, 167, 180);
+    margin-top: 15px;
+}
+.location {
+    font-size: x-large;
+}
+.temperature {
+    font-size: x-large;
+}
+.humidity {
+    font-size: x-large;
+}
+.windSpeed {
+    font-size: x-large;
+}
+#uvIndex0 {
+    font-size: x-large;
 }
 
-#weatherCard {
-    background-color: lightcyan;
-    margin-top: 15px;
+
+
+
+
+#forecastCard {
+    
+    background-color: rgb(128, 167, 180);
+    
 }
 
 #searchInput {
@@ -39,7 +61,6 @@ body {
     margin-left: 15px;
     margin-top: 15px;
 }
-
 
 #forcastRow {
    text-align: center; 
