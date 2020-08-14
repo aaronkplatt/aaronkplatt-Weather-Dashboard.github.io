@@ -57,6 +57,8 @@ function cityLimit() {
 loadCities();
 //Search Btn which is linking to the weather Api
 searchBtn.addEventListener("click", function(event) {
+    //prevent default
+    event.preventDefault();
     //resets current icons every time the search btn is clicked
     $("#currentIcon").empty();
     $("#forecastIcon1").empty();
@@ -102,8 +104,6 @@ searchBtn.addEventListener("click", function(event) {
                 url: uvURL,
                 method: "GET"
                 }).then(function (response) {
-                    //prevent default
-                    event.preventDefault();
                     //emptys the uv index slot
                     $("#uvIndex0").empty();
                     var uvIndex = response.value;
@@ -145,8 +145,6 @@ searchBtn.addEventListener("click", function(event) {
             url: forecastURL,
             method: "GET"
         }).then(function (response) {
-            //prevent default
-            event.preventDefault();
         
             //icons
             var forecastIcon1 = $("<img>").attr("src", "http://openweathermap.org/img/wn/" + response.list[0].weather[0].icon + ".png");
