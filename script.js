@@ -145,6 +145,8 @@ searchBtn.addEventListener("click", function(event) {
             url: forecastURL,
             method: "GET"
         }).then(function (response) {
+            //prevent default
+            event.preventDefault();
         
             //icons
             var forecastIcon1 = $("<img>").attr("src", "http://openweathermap.org/img/wn/" + response.list[0].weather[0].icon + ".png");
