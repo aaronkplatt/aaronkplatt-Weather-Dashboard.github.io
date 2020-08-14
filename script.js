@@ -74,7 +74,7 @@ searchBtn.addEventListener("click", function(event) {
         return false;
     }
 
-    //Create Api city responses 
+    //Create Api city responses
     else {
         //API
         var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + searchInput.value + "&APPID=c3874f4c359949e02c8d036aafbb1d67&units=imperial"
@@ -93,7 +93,6 @@ searchBtn.addEventListener("click", function(event) {
 
             var windSpeedCard = $(".windSpeed").text("Wind Speed: " + response.wind.speed + " MPH");
 
-            // TODO IF API NAME DOESNT EXIST
 
             
             // UV Index
