@@ -102,6 +102,8 @@ searchBtn.addEventListener("click", function(event) {
                 url: uvURL,
                 method: "GET"
                 }).then(function (response) {
+                    //prevent default
+                    event.preventDefault();
                     //emptys the uv index slot
                     $("#uvIndex0").empty();
                     var uvIndex = response.value;
