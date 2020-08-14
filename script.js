@@ -77,7 +77,7 @@ searchBtn.addEventListener("click", function(event) {
     //Create Api city responses 
     else {
         //API
-        var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + searchInput.value + "&APPID=c3874f4c359949e02c8d036aafbb1d67&units=imperial"
+        var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + searchInput.value + "&APPID=c3874f4c359949e02c8d036aafbb1d67&units=imperial"
         
         $.ajax({
             url: queryURL,
